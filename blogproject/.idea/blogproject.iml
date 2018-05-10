@@ -5,5 +5,7 @@
     <orderEntry type="jdk" jdkName="Python 3.4 (django_py3.4)" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="module" module-name="django-blog-tutorial" />
+    <orderEntry type="module" module-name="5_other" />
+    <orderEntry type="module" module-name="test" />
   </component>
 </module>
