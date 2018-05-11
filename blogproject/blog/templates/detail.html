@@ -1,6 +1,7 @@
 {% extends 'base.html' %}
+
 {% block main %}
-                <article class="post post-1">
+    <article class="post post-1">
                     <header class="entry-header">
                     <h1 class="entry-title">{{ post.title }}</h1>
                     <div class="entry-meta">
@@ -16,7 +17,7 @@
                         {{ post.body|safe }}
                     </div>
                 </article>
-                <section class="comment-area" id="comment-area">
+    <section class="comment-area" id="comment-area">
                     <hr>
                     <h3>发表评论</h3>
                     <form action="#" method="post" class="comment-form">
@@ -74,9 +75,11 @@
                         </ul>
                     </div>
                 </section>
-            {% endblock main %}
-            {% block toc %}
-                <div class="widget widget-content">
+{% endblock main %}
+
+
+{% block toc %}
+    <div class="widget widget-content">
         <h3 class="widget-title">文章目录</h3>
         <ul>
             <li>
@@ -96,5 +99,6 @@
             </li>
         </ul>
     </div>
-            {% endblock toc %}
+{% endblock toc %}
+
 
