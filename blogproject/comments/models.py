@@ -7,10 +7,13 @@ class Comment(models.Model):
     email = models.EmailField(max_length=255)
     url = models.URLField(blank=True)
     text = models.TextField()
-    create_time = models.TimeField(auto_now_add=True)
+    create_time = models.DateTimeField(auto_now_add=True)
 
     post = models.ForeignKey('blog.Post')
 
     def __str__(self):
         return self.text[:20]
+
+    class Meta:
+        ordering = ['-create_time']
 

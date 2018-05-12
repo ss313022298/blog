@@ -43,6 +43,11 @@ class Post(models.Model):
         return reverse('blog:detail', kwargs={'pk': self.pk})
 
 
+    class Meta:
+        ordering = ['-created_time']
+
+
+
 
 
 
