@@ -11,7 +11,7 @@ def get_recent_posts(num=3):
 # 归档模板标签
 @register.simple_tag
 def archives():
-    return Post.objects.dates('created_time', 'day', order='DESC')
+    return Post.objects.all().dates('created_time', 'day', order='DESC')
 
 # 分类模板标签
 @register.simple_tag

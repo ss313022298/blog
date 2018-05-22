@@ -15,6 +15,7 @@ def post_comment(request, post_pk):
     # 这个函数的作用是当获取的文章（Post）存在时，则获取；否则返回 404 页面给用户。
     post = get_object_or_404(Post, pk=post_pk)
 
+
     # HTTP 请求有 get 和 post 两种，一般用户通过表单提交数据都是通过 post 请求，
     # 因此只有当用户的请求为 post 时才需要处理表单数据。
     if request.method == 'POST':
